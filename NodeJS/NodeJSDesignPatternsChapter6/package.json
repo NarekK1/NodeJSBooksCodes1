@@ -1,0 +1,27 @@
+{
+  "name": "nodejsdesignpatternschapter6",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "assert": "^2.1.0",
+    "axios": "^1.13.2",
+    "chance": "^1.1.13",
+    "colors": "^1.4.0",
+    "csv-parse": "^6.1.0",
+    "csv-parser": "^3.2.0",
+    "mkdirp": "^3.0.1",
+    "mkdirp-promise": "^5.0.1",
+    "mz": "^2.7.0",
+    "parallel-transform": "^1.2.0",
+    "pumpify": "^2.0.1",
+    "request-promise": "^4.2.6",
+    "split": "^1.0.1"
+  }
+}

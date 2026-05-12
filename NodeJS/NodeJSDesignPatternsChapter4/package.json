@@ -1,0 +1,19 @@
+{
+  "name": "nodejsdesignpatternschapter4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "mkdirp": "^0.5.4",
+    "slug": "^11.0.1",
+    "superagent": "^10.2.3"
+  }
+}

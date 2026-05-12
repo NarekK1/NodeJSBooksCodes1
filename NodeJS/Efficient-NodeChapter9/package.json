@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "loadtest": "^8.2.1"
+  }
+}

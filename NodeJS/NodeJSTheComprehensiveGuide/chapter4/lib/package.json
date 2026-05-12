@@ -1,0 +1,4 @@
+{
+    "name": "word-count",
+    "main": "./lib/word-count.mjs"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "fibonacci",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env DEBUG=fibonacci:* node ./bin/www",
+    "startrest": "cross-env DEBUG=fibonacci:* SERVERPORT=3002 node ./fiboserver.js",
+    "server": "cross-env DEBUG=fibonacci:* SERVERPORT=3002 node ./fiboserver.js --max_old_space_size 5000",
+    "client": "cross-env DEBUG=fibonacci:* SERVERPORT=3002 node ./fiboclient.js"
+  
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cross-env": "^10.1.0",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-handlebars": "^8.0.6",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
+}

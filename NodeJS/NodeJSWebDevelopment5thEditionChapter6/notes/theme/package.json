@@ -1,0 +1,22 @@
+{
+    "scripts": {
+        "download": "wget -O - https://github.com/twbs/bootstrap/archive/v4.5.0.tar.gz | tar xvfz -",
+        "postdownload": "cd bootstrap-4.5.0 && npm install",
+        "clean": "rm -rf bootstrap-4.5.0",
+        "build": "cd bootstrap-4.5.0 && npm run dist",
+        "watch": "cd bootstrap-4.5.0 && npm run watch",
+        "prebuild": "cp _custom.scss bootstrap.scss bootstrap-4.5.0/scss",
+        "postbuild": "mkdir -p dist && cp -r bootstrap-4.5.0/dist .",
+        "dl-minty": "mkdir -p minty && npm run dl-minty-css && npm run dl-minty-min-css",
+        "dl-minty-css": "wget https://bootswatch.com/4/minty/bootstrap.css -O minty/bootstrap.css",
+        "dl-minty-min-css": "wget https://bootswatch.com/4/minty/bootstrap.min.css -O minty/bootstrap.min.css"  
+    },
+    "dependencies": {
+        "bootstrap": "^4.5.0",
+        "rollup": "^4.60.1",
+        "rollup-plugin-babel": "^4.4.0"
+    },
+    "devDependencies": {
+        "@rollup/plugin-babel": "^7.0.0"
+    }
+}
