@@ -1,0 +1,25 @@
+<div>
+  {{!-- if condition checks if the given variable true of false and if true return the code inside --}}
+  {{!-- {{#if show}} --}}
+    {{!-- <pre>Hello</pre> --}}
+    {{!-- if the condition is false --}}
+  {{!-- {{else}} --}}
+    {{!-- <pre>Goodbye</pre> --}}
+   {{!-- {{/if}} --}}
+
+   {{!-- works like if but if the condition is false --}}
+   {{!-- {{#unless show}} --}}
+     {{!-- <pre>Unless Goodbye</pre> --}}
+    {{!-- {{/unless}} --}}
+    <div>
+       {{#if show1}}
+          <div>Block 1</div>
+       {{else if show2}}
+          <div>Block 2</div>
+        {{/if}}
+        {{#unless show}}
+          <div>Block 3</div>
+        {{/unless}}
+    </div>
+</div>
+

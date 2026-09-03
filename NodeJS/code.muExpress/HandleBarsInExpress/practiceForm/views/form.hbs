@@ -1,0 +1,48 @@
+<form action="" method="POST">
+    {{!-- <input type="number" name="Celsius" placeholder="Celsius"> --}}
+   {{!-- <input type="number" name="Fahrenheit" placeholder="Fahrenheit"> --}}
+   {{!-- <input type="number" name="factorial" placeholder="Factorial"> --}}
+   {{!-- <input type="number" name="divisors" placeholder="Divisors"> --}}
+   {{!-- <input type="number" name="num1" placeholder="Enter a first number"> --}}
+   {{!-- <input type="number" name="num2" placeholder="Enter a second number"> --}}
+   {{!-- <input type="number" name="num1" placeholder="Enter first coefficient">
+   <input type="number" name="num2" placeholder="Enter seond coefficient">
+   <input type="number" name="num3" placeholder="Enter third coefficient"> --}}
+   {{!-- <input type="number" name="num1" placeholder="Enter first number">
+   <input type="number" name="num2" placeholder="Enter seond number">
+   <input type="number" name="num3" placeholder="Enter third number"> --}}
+   {{!-- <input type="date" name="date" placeholder="Enter the date">   --}}
+   {{!-- {8-9} --}}
+   {{!-- <textarea name="text" placeholder="Enter the text" cols="30" rows="10"></textarea> --}}
+   {{!-- 10 --}}
+   <label>Day:</label>
+   <select name="day">
+    {{#each (range 1 31)}}
+       <option value="{{this}}">{{this}}</option>
+    {{/each}}
+   </select>
+   <label>Month:</label>
+    <select name="month">
+        <option value="0">January</option>
+        <option value="1">February</option>
+        <option value="2">March</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">June</option>
+        <option value="6">July</option>
+        <option value="7">August</option>
+        <option value="8">September</option>
+        <option value="9">October</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+    </select>
+
+    <label>Year:</label>
+    <select name="year">
+        {{#each (range 1990 2025)}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+    </select>
+   
+   <input type="submit">
+</form>

@@ -1,0 +1,12 @@
+{
+  "name": "p2",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "app.mjs",
+  "scripts": {
+    "test": "node app.mjs"
+  }
+}
