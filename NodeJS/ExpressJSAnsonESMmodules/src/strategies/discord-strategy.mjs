@@ -38,8 +38,8 @@ passport.deserializeUser(async (id, done) => {
 
 //this is the strategy for discord authentication using passport.js
 export default passport.use(new Strategy({
-    clientID: '1543574071558672484',
-    clientSecret: 'GN4817atj3VeKaqVIfTwjvuyRhz6oZOr',
+    clientID: '',
+    clientSecret: '',
     callbackURL: 'http://localhost:3000/api/auth/discord/redirect',
     scope: ['identify']
 },
