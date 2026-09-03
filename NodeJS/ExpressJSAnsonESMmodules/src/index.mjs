@@ -21,7 +21,7 @@ import './strategies/local-strategy.mjs';
 // const app = express();
 
 //connect to the MongoDB database using mongoose and log a message to the console when connected or if there is an error
-mongoose.connect('mongodb+srv://nkirakosyan56_db_user:IIWWUFJJrSa2r1bY@cluster0.rfxuf4m.mongodb.net/?appName=Cluster0')
+mongoose.connect('')
 .then(() => console.log('Connected to database'))
 .catch(err => console.log(`Error: ${err}`));
 
