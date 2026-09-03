@@ -10,7 +10,7 @@ describe('create user and login', () => {
     //before all tests, connect to the MongoDB database using mongoose and log a message to the console when connected or if there is an error
     beforeAll(async () => {
         //connect to the MongoDB database using mongoose and log a message to the console when connected or if there is an error
-        await mongoose.connect('mongodb+srv://nkirakosyan56_db_user:IIWWUFJJrSa2r1bY@cluster0.rfxuf4m.mongodb.net/?appName=Cluster0')
+        await mongoose.connect('')
         .then(() => console.log("Connected to Test Database"))
         .catch((err) => console.log(`Error: ${err}`));;
         console.log('Connected to database');
